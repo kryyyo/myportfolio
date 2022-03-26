@@ -60,10 +60,15 @@ nav {
     align-items: center;
 
     width: 48px;
-    font-size: 24px;
     color: var(--gray-font);
 
     border-left: 1px solid var(--gray-border);
+}
+
+.nav-btn img {
+    width: 16px;
+    height: auto;
+    filter: invert(50%);
 }
 
 aside {

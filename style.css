@@ -10,7 +10,10 @@
     --white: #eeeeee;
     --gray-border: #222222;
     --gray-bg: #171717;
+    --gray-font: #808080;
     --gold: #b8860b;
+
+    --sidebarHeight: calc(100vh - 48px);
 }
 
 body {
@@ -31,12 +34,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
 
-    background-color: var(--black);
-    border: 1px solid var(--gray-border);
+    background-color: var(--gray-bg);
+    border-bottom: 1px solid var(--gray-border);
 
     height: 48px;
+}
+
+.nav-logo {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--black);
+    border-right: 1px solid var(--gray-border);
+
+    width: 200px;
 }
 
 .nav-btn {
@@ -47,6 +61,37 @@ nav {
 
     width: 48px;
     font-size: 24px;
+    color: var(--gray-font);
 
-    border: 1px solid var(--gray-border);
+    border-left: 1px solid var(--gray-border);
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    
+    background-color: var(--gray-bg);
+    border-left: 1px solid var(--gray-border);
+
+    width: 48px;
+    height: var(--sidebarHeight);
+
+}
+
+.aside-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 16px;
+}
+
+.aside-icons img{
+    display: block;
+    filter: invert(50%);
+
+    width: 16px;
+    height: auto;
+    
 }

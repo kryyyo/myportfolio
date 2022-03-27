@@ -204,7 +204,6 @@ footer {
     font-size: 24px;
 }
 
-
 .nav-list a {
     text-decoration: none;
     color: var(--white)
@@ -226,11 +225,16 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 0 24px 0 24px;
 }
 
 .landing-page span {
     font-size: 24px;
+}
+
+.landing-page a {
+    align-self: center;
 }
 
 .landing-page img {
@@ -239,8 +243,8 @@ a:visited {
 
     filter: invert(50%);
 
-    position: fixed;
-    bottom: 56px;
+    position: absolute;
+    bottom: 4px;
 
     animation: beat 1s ease-in 0s infinite normal none;
 }

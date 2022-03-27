@@ -20,6 +20,10 @@
     --steps: 20;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* background-color: #000000; */
     font-family: 'Montserrat', sans-serif;
@@ -34,12 +38,17 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Hind', sans-serif;
 }
 
+h1 {
+    font-size: 24px;
+}
+
 strong {
     color: var(--blue)
 }
 
 nav {
     position: fixed;
+    z-index: 1;
     
     display: flex;
     justify-content: space-between;
@@ -204,7 +213,7 @@ footer {
     font-size: 24px;
 }
 
-nav a, .nav-list a {
+nav a, .nav-list a, a {
     text-decoration: none;
     color: var(--white)
 }
@@ -307,4 +316,76 @@ a:visited {
       animation-timing-function: ease-in;
       transform: translateY(0px);
     }
+}
+
+#about {
+    background-color: var(--gray-bg);
+
+    min-height: var(--nav-height);
+    max-width: var(--footer-width);
+
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 0 24px;
+}
+
+.about-name {
+    height: calc(var(--footer-width) - 24px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 8px 8px 8px;
+    margin-bottom: 24px;
+
+    background: url(http://placekitten.com/400/400) no-repeat;
+}
+
+.about-name>h1 {
+    margin-top: 16px;
+    line-height: 20px;
+}
+
+.about-name>h1+p{
+    font-size: 12px;
+}
+
+.about-desc {
+    line-height: 24px;
+    font-size: 14px;
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 24px;
+}
+.about-certs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 24px;
+}
+
+.about-tech-stack {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-tech-stack img {
+    height: 64px;
+    width: 64px;
+}
+
+.about-tech-stack div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }

@@ -2,13 +2,14 @@
 const btnNav = document.querySelector('.nav-btn')
 const contentNav = document.querySelector('.nav-menu')
 const btnNavImage = document.querySelector('.nav-btn img')
+const listNav = document.querySelector('.nav-list')
 
 //Functions
 function eventTester(e) {
     console.log(e)
 }
 
-function showNav() {
+function toggleNav() {
     contentNav.classList.toggle('show')
 
     if(btnNavImage.alt === "menu-icon") {
@@ -28,5 +29,10 @@ function showBtnNav() {
     btnNavImage.alt = "menu-icon";
 }
 
+function removeNav() {
+    contentNav.classList.remove('show')
+}
+
 //Listeners
-btnNav.addEventListener('click', showNav)
+btnNav.addEventListener('click', toggleNav)
+listNav.addEventListener('click', removeNav)

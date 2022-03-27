@@ -9,7 +9,8 @@ function eventTester(e) {
     console.log(e)
 }
 
-function toggleNav() {
+function toggleNav(e) {
+    e.preventDefault()
     contentNav.classList.toggle('show')
 
     if(btnNavImage.alt === "menu-icon") {

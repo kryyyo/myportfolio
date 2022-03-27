@@ -229,6 +229,26 @@ a:visited {
     align-items: center;
 }
 
+.landing-page span {
+    font-size: 24px;
+}
+
+.landing-page img {
+    width: 24px;
+    height: auto;
+
+    filter: invert(50%);
+
+    position: fixed;
+    bottom: 56px;
+
+    animation: beat 1s ease-in 0s infinite normal none;
+}
+
+#landing-name {
+    margin-top: 16px;
+}
+
 #landing-type {
     font-family: monospace;
     position: relative;
@@ -261,3 +281,15 @@ a:visited {
         border: 0;
     }
 }
+
+@keyframes beat {
+    0% {
+      animation-timing-function: ease-in;
+      transform: translateY(-16px);
+    }
+
+    100% {
+      animation-timing-function: ease-in;
+      transform: translateY(0px);
+    }
+  }

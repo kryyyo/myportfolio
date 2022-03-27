@@ -213,31 +213,42 @@ a:visited {
     color: var(--white)
 }
 
-.landing-page {
-    height: var(--nav-height);
-    width: var(--footer-width);
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 48px 48px 0;
+}
 
-    position: absolute;
-    top: 48px;
+.landing {
+    min-height: var(--nav-height);
+    max-width: var(--footer-width);
 
     background-color: var(--black);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    position: relative;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    padding: 0 24px 0 24px;
+    padding: 0px 24px;
 }
 
 .landing-page span {
     font-size: 24px;
 }
 
-.landing-page a {
+.landing a {
     align-self: center;
 }
 
-.landing-page img {
+#down-arrow {
     width: 24px;
     height: auto;
 
@@ -296,4 +307,4 @@ a:visited {
       animation-timing-function: ease-in;
       transform: translateY(0px);
     }
-  }
+}

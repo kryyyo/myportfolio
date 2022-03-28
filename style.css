@@ -1,3 +1,5 @@
+/* Start of General CSS Selectors */
+
 * {
     margin: 0;
     padding: 0; 
@@ -46,6 +48,9 @@ strong {
     color: var(--blue)
 }
 
+/* End of General CSS Selectors  */
+
+/* Start of Mobile First Design */
 nav {
     position: fixed;
     z-index: 1;
@@ -369,7 +374,6 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-bottom: 24px;
     gap: 24px;
 }
@@ -388,12 +392,20 @@ a:visited {
     width: 64px;
 }
 
-.about-tech-stack div {
+.tech {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+
+.tech-stack-icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 #project {
@@ -498,3 +510,10 @@ a:visited {
     height: 16px;
     width: auto;
 }
+
+/* End of Mobile First Design */
+
+/* Media Queries */
+
+/* Start of Responsive Design for Mobile M W-375 */
+/* End of Responsive Design for Mobile M W-375 */

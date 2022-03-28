@@ -389,3 +389,14 @@ a:visited {
     align-items: center;
     gap: 8px;
 }
+
+#project {
+    background-color: var(--black);
+
+    min-height: var(--nav-height);
+    max-width: var(--footer-width);
+
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 0 24px;
+}

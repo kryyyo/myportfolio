@@ -359,6 +359,12 @@ a:visited {
     margin-bottom: 24px;
     gap: 24px;
 }
+
+.about-desc a, a[href="https://www.theodinproject.com/"] {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
 .about-certs {
     display: flex;
     flex-direction: column;
@@ -398,5 +404,52 @@ a:visited {
 
     display: flex;
     flex-direction: column;
-    padding: 48px 24px 0 24px;
+    gap: 24px;
+    padding: 48px 24px;
+}
+
+.project-items { 
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+
+    background-color: var(--gray-bg);
+}
+
+.links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 12px 0;
+
+    border: 1px solid var(--gray-border);
+    background-color: var(--black);
+
+    font-size: 14px;
+}
+
+.item img {
+    height: 120px;
+}
+
+.icons img {
+    height: 24px;
+    width: 24px;
+}
+
+.desc, .links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.desc p {
+    font-size: 14px;
 }

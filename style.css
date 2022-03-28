@@ -151,12 +151,17 @@ footer {
     align-items: center;
 }
 
-.footer-scroll-to-top img {
+#btn-back-to-top {
     display: none;  
-    filter: invert(80%);
+    filter: invert(50%);
 
     width: 16px;
     height: auto;
+}
+
+#btn-back-to-top.show {
+    transition: all 0.2s;
+    display: block;
 }
 
 .footer-copyright {
@@ -343,7 +348,7 @@ a:visited {
     padding: 0 8px 8px 8px;
     margin-bottom: 24px;
 
-    background: url(http://placekitten.com/400/400) no-repeat;
+    background: url(http://placekitten.com/1000/1000) no-repeat;
 }
 
 .about-name>h1 {
@@ -362,6 +367,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
+    padding: 16px;
     gap: 24px;
 }
 
@@ -533,5 +539,5 @@ a:visited {
 
 /* Media Queries */
 
-/* Start of Responsive Design for Mobile M W-375 */
-/* End of Responsive Design for Mobile M W-375 */
+/* Start of Fix for Mobile M W-375 */
+/* End of Fix for Mobile M W-375 */

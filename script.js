@@ -3,10 +3,11 @@ const btnNav = document.querySelector('.nav-btn')
 const contentNav = document.querySelector('.nav-menu')
 const btnNavImage = document.querySelector('.nav-btn img')
 const listNav = document.querySelector('.nav-list')
+const btnBackToTop = document.querySelector('#btn-back-to-top')
 
 //Functions
-function eventTester(e) {
-    console.log(e)
+function eventTester() {
+    console.log(this)
 }
 
 function toggleNav(e) {
@@ -34,6 +35,15 @@ function removeNav() {
     contentNav.classList.remove('show')
 }
 
+function showToTop() {
+    if (window.scrollY !== 0) {
+        btnBackToTop.classList.add('show')
+    } else {
+        btnBackToTop.classList.remove('show')
+    }
+}
+
 //Listeners
 btnNav.addEventListener('click', toggleNav)
 listNav.addEventListener('click', removeNav)
+window.addEventListener('scroll', showToTop)

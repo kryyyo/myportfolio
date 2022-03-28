@@ -585,23 +585,25 @@ a:visited {
     .contact {
         min-width: 45%;
     }
+
+    .project-items {
+        max-width: 90%;
+        align-self: center;
+    }
 }
 /* End of Fix for Tablet W-768 */
 
 /* Start of Fix for Laptop W-1024 */
 @media only screen and (min-width: 1024px) {
     #project, #contact, #about {
-        padding: 96px;
+        padding-left:15%;
+        padding-right: 15%;
     }
 
     .about-name {
         height: 512px;
     }
 
-    .project-items {
-        max-width: 80%;
-        align-self: center;
-    }
 
     .item {
         flex-direction: row;

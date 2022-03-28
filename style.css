@@ -383,6 +383,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 24px;
     gap: 24px;
 }
@@ -595,6 +596,11 @@ a:visited {
 
     .about-name {
         height: 512px;
+    }
+
+    .project-items {
+        max-width: 80%;
+        align-self: center;
     }
 
     .item {

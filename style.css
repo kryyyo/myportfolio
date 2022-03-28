@@ -453,3 +453,43 @@ a:visited {
 .desc p {
     font-size: 14px;
 }
+
+#contact {
+    background-color: var(--gray-bg);
+
+    min-height: var(--nav-height);
+    max-width: var(--footer-width);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px 24px;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 24px;
+}
+
+.contact {
+    background-color: var(--black);
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--gray-border);
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-title img {
+    filter: invert(50%);
+    height: 16px;
+    width: auto;
+}

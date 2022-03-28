@@ -378,6 +378,21 @@ a:visited {
     gap: 24px;
 }
 
+.certs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 16px;
+}
+
+.cert {
+    background-color: var(--black);
+    padding: 24px;
+
+    border: 1px solid var(--gray-border);
+    border-radius: 4px;
+}
+
 .about-tech-stack {
     display: flex;
     flex-direction: column;
@@ -433,6 +448,7 @@ a:visited {
     gap: 8px;
 
     background-color: var(--gray-bg);
+    border-radius: 4px;
 }
 
 .links a {
@@ -442,6 +458,7 @@ a:visited {
     padding: 12px 0 12px 0;
 
     border: 1px solid var(--gray-border);
+    border-radius: 4px;
     background-color: var(--black);
 
     font-size: 14px;
@@ -493,6 +510,7 @@ a:visited {
     padding: 12px;
 
     border: 1px solid var(--gray-border);
+    border-radius: 4px;
 }
 
 .contact sub {

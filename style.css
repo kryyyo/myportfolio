@@ -478,8 +478,13 @@ a:visited {
 
     display: flex;
     flex-direction: column;
+    padding: 12px;
 
     border: 1px solid var(--gray-border);
+}
+
+.contact sub {
+    font-size: 12px;
 }
 
 .contact-title {

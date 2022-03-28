@@ -33,6 +33,7 @@ function showBtnNav() {
 
 function removeNav() {
     contentNav.classList.remove('show')
+    showBtnNav()
 }
 
 function showToTop() {

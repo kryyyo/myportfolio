@@ -543,3 +543,39 @@ a:visited {
 
 /* Start of Fix for Mobile M W-375 */
 /* End of Fix for Mobile M W-375 */
+
+/* Start of Fix for Mobile M W-425 */
+@media only screen and (min-width: 425px) {
+    .contact{
+        padding: 24px;
+    }
+
+    #project, #contact {
+        padding: 48px;
+    }
+
+    #about {
+        padding: 36px;
+    }
+}
+/* End of Fix for Mobile M W-425 */
+
+/* Start of Fix for Tablet W-768 */
+@media only screen and (min-width: 768px) {
+    .certs-list {
+        flex-direction: row;
+    }
+
+    .contact-page {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .contact {
+        min-width: 45%;
+    }
+}
+/* End of Fix for Tablet W-768 */
+
+/* Start of Fix for Laptop W-1024 */
+/* End of Fix for Laptop W-1024 */

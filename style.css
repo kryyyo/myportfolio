@@ -351,6 +351,7 @@ a:visited {
     margin-bottom: 24px;
 
     background: url(http://placekitten.com/1000/1000) no-repeat;
+    background-size: cover;
 }
 
 .about-name>h1 {
@@ -516,6 +517,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     padding: 12px;
+    justify-content: center;
 
     border: 1px solid var(--gray-border);
     border-radius: 4px;
@@ -562,6 +564,14 @@ a:visited {
 
 /* Start of Fix for Tablet W-768 */
 @media only screen and (min-width: 768px) {
+    .about-name {
+        height: 420px;
+    }
+
+    .landing-page {
+        margin-left: 15%;
+    }
+
     .certs-list {
         flex-direction: row;
     }
@@ -578,4 +588,37 @@ a:visited {
 /* End of Fix for Tablet W-768 */
 
 /* Start of Fix for Laptop W-1024 */
+@media only screen and (min-width: 1024px) {
+    #project, #contact, #about {
+        padding: 96px;
+    }
+
+    .about-name {
+        height: 512px;
+    }
+
+    .item {
+        flex-direction: row;
+        gap: 5%;
+        padding: 36px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .preview {
+        min-height: 100%;
+        width: 50%;
+
+        align-self: center;
+    }
+
+    #contact {
+        font-size: 18px;
+    }
+
+    .contact.phone {
+        display: flex;
+        gap: 12px;
+    }
+}
 /* End of Fix for Laptop W-1024 */

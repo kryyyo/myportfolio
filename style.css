@@ -517,7 +517,6 @@ a:visited {
 
     display: flex;
     flex-direction: column;
-    padding: 12px;
     justify-content: center;
 
     border: 1px solid var(--gray-border);
@@ -630,3 +629,25 @@ a:visited {
     }
 }
 /* End of Fix for Laptop W-1024 */
+
+/* Start of Hover CSS */
+.nav-list>li>a:hover, .aside-icons>a:hover, .footer-copyright>a>img:hover, #btn-back-to-top:hover {
+    display: block;
+    transform: scale(1.5);
+    color: var(--blue);
+}
+
+#name-logo:hover, #down-arrow:hover {
+    transform: scale(1.2);
+}
+
+.links>a:hover, .contact:hover, .contact>a:hover {
+    background-color: var(--blue);
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+/* End of Hover CSS */

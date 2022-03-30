@@ -477,8 +477,8 @@ a:visited {
     font-size: 14px;
 }
 
-.item img {
-    height: auto;
+.preview {
+    height: 96px;
     margin-bottom: 1%;
 }
 
@@ -529,7 +529,7 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     margin: 1%;
-    padding: 1%;
+    padding: 5%;
 
     border: 1px solid var(--gray-border);
     border-radius: 4px;

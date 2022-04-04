@@ -512,7 +512,6 @@ a:visited {
 #contact {
     background-color: var(--gray-bg);
 
-    min-height: var(--nav-height);
     max-width: var(--footer-width);
 
     display: flex;
